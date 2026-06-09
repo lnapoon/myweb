@@ -1,95 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-    <style>
-        .carousel-item {
-            height: 500px;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROFILE | MONPHRAKAN KHAMLUE</title>
+    <link rel="icon" type="image/x-icon" href="image/11.png">
 
-        .carousel-item img {
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-title">MONPHRAKAN KHAMLUE</div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar-custom d-flex justify-content-between align-items-center">
+        <a href="#hero" class="nav-brand">MONPHRAKAN KHAMLUE</a>
+        <div class="nav-links-wrapper">
+            <div class="nav-active-bubble"></div>
+            <ul class="nav-links mb-0">
+                <li><a href="#about" class="nav-item-link">เกี่ยวกับฉัน</a></li>
+                <li><a href="#portfolio" class="nav-item-link">ผลงาน</a></li>
+                <li><a href="#education" class="nav-item-link">การศึกษา</a></li>
+                <li><a href="#contact" class="nav-item-link">ติดต่อฉัน</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="row">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="1.jpg" class="d-block w-100" alt="...">
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Image -->
+                <div class="profile-img-wrap" data-aos="fade-right" data-aos-duration="900">
+                    <div class="profile-frame">
+                        <div class="profile-img-inner" onclick="document.getElementById('profileInput').click()"
+                            title="คลิกเพื่ออัปโหลดรูปโปรไฟล์">
+                            <div class="profile-placeholder" id="profilePlaceholder" style="display:none">
+                                <i class="ti ti-camera"></i>
+                                <span>คลิกเพื่อใส่รูป</span>
+                            </div>
+                            <img src="image/1.jpg" alt="Profile Photo" id="profileImg" />
+                        </div>
+                    </div>
+                    <input type="file" id="profileInput" accept="image/*" />
                 </div>
-                <div class="carousel-item">
-                    <img src="4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="5.JPG" class="d-block w-100" alt="...">
+
+                <!-- Text -->
+                <div class="hero-text" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+                    <div class="hero-eyebrow">Portfolio &amp; Resume</div>
+                    <h1 class="hero-name">มนต์พระกาญจน์ คำเหลือ</h1>
+                    <p class="hero-role">นักศึกษา · Computer Science</p>
+                    <p class="hero-bio">
+                        มุ่งมั่นในการพัฒนาทักษะด้าน Computer Science พร้อมนำความรู้มาประยุกต์ใช้ในอนาคต
+                        พร้อมแก้ไขปัญหาที่เกิดขึ้นในยุคใหม่ และเรียนรู้สิ่งใหม่ๆ อยู่เสมอ
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn-primary-custom">
+                            <i class="ti ti-eye"></i> ดูผลงาน
+                        </a>
+                        <a href="#contact" class="btn-outline-custom">
+                            <i class="ti ti-send"></i> ติดต่อฉัน
+                        </a>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="ti ti-arrow-down" style="font-size:14px"></i>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT / SKILLS ─── -->
+    <section id="about">
+        <div class="container">
+            <div class="about-skills-card" data-aos="fade-up" data-aos-duration="800">
+                <div class="about-skills-inner">
+
+                    <!-- About text -->
+                    <div class="about-col">
+                        <div class="section-label">เกี่ยวกับฉัน</div>
+                        <h2 class="section-title">สวัสดี ฉัน มนต์พระกาญจน์</h2>
+                        <p style="font-size:15px;color:var(--ink-light);line-height:1.85;margin-bottom:1.5rem">
+                            นักศึกษาสาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่2 มหาวิทยาลัยราชภัฏศรีสะเกษ รหัสนักศึกษา 6812732120
+                        </p>
+                        <p style="font-size:15px;color:var(--ink-light);line-height:1.85">
+                            ผมกำลังศึกษาอยู่ที่มหาวิทยาลัยราชภัฏศรีสะเกษ ชั้นปีที่ 2
+                            มีความสนใจด้านการเขียนโปรแกรมและการพัฒนาเว็ปไซต์ พร้อมเรียนรู้เทคโนโลยีใหม่ๆ
+                            และแก้ไขปัญหาที่เกิดขึ้นในยุคปัจจุบันด้วยเทคโนโลยีที่มีอยู่ พร้อมพัฒนาตนเองอยู่เสมอ
+                        </p>
+                        <div class="about-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="about-divider"></div>
+
+                    <!-- Skills -->
+                    <div class="skills-col">
+                        <div class="section-label">ทักษะ</div>
+                        <h2 class="section-title mb-4">Expertise</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                                <div class="skill-icon"><i class="ti ti-brush"></i></div>
+                                <div class="skill-name">UI / UX Design</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="20"></div>
+                                </div>
+                                <div class="skill-percent">20%</div>
+                            </div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+                                <div class="skill-icon"><i class="ti ti-brand-python"></i></div>
+                                <div class="skill-name">Python</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                                <div class="skill-percent">30%</div>
+                            </div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="skill-icon"><i class="ti ti-coffee"></i></div>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                                <div class="skill-percent">35%</div>
+                            </div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                                <div class="skill-icon"><i class="ti ti-brand-html5"></i></div>
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="45"></div>
+                                </div>
+                                <div class="skill-percent">45%</div>
+                            </div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="skill-icon"><i class="ti ti-database"></i></div>
+                                <div class="skill-name">Database</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="25"></div>
+                                </div>
+                                <div class="skill-percent">25%</div>
+                            </div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                                <div class="skill-icon"><i class="ti ti-brain"></i></div>
+                                <div class="skill-name">AI</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="80"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PORTFOLIO ─── -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">Portfolio</div>
+                <h2 class="section-title">ผลงานที่ผ่านมา</h2>
+            </div>
+
+            <div class="portfolio-single">
+                <div class="proj-card-featured" data-aos="fade-up" data-aos-delay="0">
+                    <div class="proj-thumb-featured">
+                        <img src="image/7.jpg" alt="ODOS SUMMER CAMP 2025" />
+                    </div>
+                    <div class="proj-body-featured">
+                        <div class="proj-tag">ODOS SUMMER CAMP 2025</div>
+                        <div class="proj-name" style="font-size:1.5rem">ODOS SUMMER CAMP</div>
+                        <p class="proj-desc" style="font-size:14px;max-width:480px">ได้ทุนรัฐบาลไทย 100%
+                            ได้ไปประเทศฟินแลนด์</p>
+                        <a href="https://www.facebook.com/share/p/1FgoNbQREv/" target="_blank" class="proj-link">View
+                            Project <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EDUCATION ─── -->
+    <section id="education">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">การศึกษา</div>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="ti ti-school"></i></div>
+                            <div class="timeline-date">2025 - ปัจจุบัน</div>
+                            <div class="timeline-title">ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์</div>
+                            <div class="timeline-org">มหาวิทยาลัยราชภัฏศรีสะเกษ</div>
+                            <p class="timeline-desc">สาขาเน้นการเขียนโค้ดเป็นหลัก เช่น Python, Java และอื่นๆ
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="ti ti-award"></i></div>
+                            <div class="timeline-date">2025</div>
+                            <div class="timeline-title">นักศึกษาทุนต่างประเทศฟินแลนด์</div>
+                            <div class="timeline-org">Metripolia University of Applied Sciences </div>
+                            <p class="timeline-desc">การแลกเปลี่ยนเรียนรู้ระหว่างประเทศฟินแลนด์ โดยได้ทุนรัฐบาลไทย 100%
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="ti ti-book"></i></div>
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-title">นักเรียนมัธยมศึกษาตอนปลาย</div>
+                            <div class="timeline-org">โรงเรียนไพรบึงวิทยาคม ต.ไพรบึง อ.ไพรบึง จังหวัดศรีสะเกษ
+                            </div>
+                            <p class="timeline-desc">สำเร็จการศึกษาระดับชั้นมัธยมศึกษาตอนปลาย</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+        <div class="container">
+            <div data-aos="fade-up">
+                <div class="section-label">ติดต่อ</div>
+                <h1 style="font-size: 25px;font-weight: 400;">มาลุยไปด้วยกัน!!</h1>
+                <p style="font-size: 18px; font-weight: 300;">นักศึกษา มหาวิทยาลัยราชภัฏศรีสะเกษ · ชั้นปีที่ 2 ·
+                    รหัสนักศึกษา 6812732120</p>
+            </div>
+
+            <div class="contact-links" data-aos="fade-up" data-aos-delay="150">
+                <a href="mailto:your@email.com" class="contact-btn contact-btn-solid">
+                    <i class="ti ti-mail"></i> Gmail
+                </a>
+                <a href="https://www.instagram.com/lnwpoon_2007?igsh=MWQ0b2dkeTg5aTlvYQ%3D%3D" target="_blank"
+                    class="contact-btn contact-btn-ghost">
+                    <i class="ti ti-brand-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/share/194bjcPJCM/" target="_blank"
+                    class="contact-btn contact-btn-ghost">
+                    <i class="ti ti-brand-facebook"></i> Facebook
+                </a>
+            </div>
+
+            <p class="footer-copy">© 2026 มนต์พระกาญจน์ คำเหลือ · Designed with intention</p>
+        </div>
+    </section>
+
+    <!-- ─── SCRIPTS ─── -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
