@@ -252,3 +252,41 @@ const skillObs = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 const aboutSection = document.getElementById('about');
 if (aboutSection) skillObs.observe(aboutSection);
+
+// Mobile navigation toggle
+const navToggle = document.getElementById('navToggle');
+const navLinksEl = document.querySelector('.nav-links');
+
+if (navToggle && navLinksEl) {
+    navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navLinksEl.classList.toggle('open');
+        const icon = navToggle.querySelector('i');
+        if (icon) {
+            if (navLinksEl.classList.contains('open')) {
+                icon.className = 'ti ti-x';
+            } else {
+                icon.className = 'ti ti-menu-2';
+            }
+        }
+    });
+
+    // Close mobile menu when clicking a link
+    const links = navLinksEl.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinksEl.classList.remove('open');
+            const icon = navToggle.querySelector('i');
+            if (icon) icon.className = 'ti ti-menu-2';
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinksEl.contains(e.target) && !navToggle.contains(e.target)) {
+            navLinksEl.classList.remove('open');
+            const icon = navToggle.querySelector('i');
+            if (icon) icon.className = 'ti ti-menu-2';
+        }
+    });
+}
