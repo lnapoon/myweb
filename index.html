@@ -42,6 +42,7 @@
             <div class="nav-active-bubble"></div>
             <ul class="nav-links mb-0">
                 <li><a href="#about" class="nav-item-link">เกี่ยวกับฉัน</a></li>
+                <li><a href="#personal-info" class="nav-item-link">ข้อมูลส่วนตัว</a></li>
                 <li><a href="#portfolio" class="nav-item-link">ผลงาน</a></li>
                 <li><a href="#education" class="nav-item-link">การศึกษา</a></li>
                 <li><a href="#contact" class="nav-item-link">ติดต่อฉัน</a></li>
@@ -98,25 +99,22 @@
         </div>
     </section>
 
-    <!-- ─── ABOUT / SKILLS ─── -->
+    <!-- ─── ABOUT ─── -->
     <section id="about">
         <div class="container">
             <div class="about-skills-card" data-aos="fade-up" data-aos-duration="800">
-                <div class="about-skills-inner">
-
+                <div class="about-content-wrapper">
                     <!-- About text -->
-                    <div class="about-col">
-                        <div class="section-label">เกี่ยวกับฉัน</div>
+                    <div class="about-col text-center">
+                        <div class="section-label justify-content-center">เกี่ยวกับฉัน</div>
                         <h2 class="section-title">สวัสดี ฉัน มนต์พระกาญจน์</h2>
-                        <p style="font-size:15px;color:var(--ink-light);line-height:1.85;margin-bottom:1.5rem">
-                            นักศึกษาสาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่2 มหาวิทยาลัยราชภัฏศรีสะเกษ รหัสนักศึกษา 6812732120
+                        <p class="mx-auto" style="font-size:16px;color:var(--ink-light);line-height:1.9;margin-bottom:1.5rem;max-width:800px">
+                            นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มุ่งมั่นในการพัฒนาทักษะด้านเทคโนโลยีและการเขียนโปรแกรมเพื่อสร้างสรรค์นวัตกรรมใหม่ๆ
                         </p>
-                        <p style="font-size:15px;color:var(--ink-light);line-height:1.85">
-                            ผมกำลังศึกษาอยู่ที่มหาวิทยาลัยราชภัฏศรีสะเกษ ชั้นปีที่ 2
-                            มีความสนใจด้านการเขียนโปรแกรมและการพัฒนาเว็ปไซต์ พร้อมเรียนรู้เทคโนโลยีใหม่ๆ
-                            และแก้ไขปัญหาที่เกิดขึ้นในยุคปัจจุบันด้วยเทคโนโลยีที่มีอยู่ พร้อมพัฒนาตนเองอยู่เสมอ
+                        <p class="mx-auto" style="font-size:16px;color:var(--ink-light);line-height:1.9;margin-bottom:2rem;max-width:800px">
+                            มีความสนใจอย่างมากในด้านการพัฒนาซอฟต์แวร์และการเขียนโปรแกรม มีความพร้อมในการเรียนรู้สิ่งใหม่ๆ เสมอ และมุ่งมั่นที่จะพัฒนาตนเองเพื่อก้าวสู่การเป็นนักพัฒนามืออาชีพในอนาคต
                         </p>
-                        <div class="about-tags">
+                        <div class="about-tags justify-content-center">
                             <span class="tag">Python</span>
                             <span class="tag">Java</span>
                             <span class="tag">HTML/CSS</span>
@@ -125,66 +123,128 @@
                             <span class="tag">AI</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Divider -->
-                    <div class="about-divider"></div>
+                <!-- Divider -->
+                <div class="about-divider-horizontal"></div>
 
-                    <!-- Skills -->
-                    <div class="skills-col">
-                        <div class="section-label">ทักษะ</div>
-                        <h2 class="section-title mb-4">Expertise</h2>
-                        <div class="skills-grid">
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
-                                <div class="skill-icon"><i class="ti ti-brush"></i></div>
-                                <div class="skill-name">UI / UX Design</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="20"></div>
-                                </div>
-                                <div class="skill-percent">20%</div>
+                <!-- Skills Section -->
+                <div class="about-skills-section">
+                    <div class="text-center mb-5">
+                        <div class="section-label justify-content-center">ทักษะ</div>
+                        <h2 class="section-title">Expertise & Skills</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                            <div class="skill-icon"><i class="ti ti-brush"></i></div>
+                            <div class="skill-name">UI / UX Design</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="20"></div>
                             </div>
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
-                                <div class="skill-icon"><i class="ti ti-brand-python"></i></div>
-                                <div class="skill-name">Python</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="30"></div>
-                                </div>
-                                <div class="skill-percent">30%</div>
+                            <div class="skill-percent">20%</div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+                            <div class="skill-icon"><i class="ti ti-brand-python"></i></div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="30"></div>
                             </div>
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="skill-icon"><i class="ti ti-coffee"></i></div>
-                                <div class="skill-name">Java</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="35"></div>
-                                </div>
-                                <div class="skill-percent">35%</div>
+                            <div class="skill-percent">30%</div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon"><i class="ti ti-coffee"></i></div>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="35"></div>
                             </div>
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
-                                <div class="skill-icon"><i class="ti ti-brand-html5"></i></div>
-                                <div class="skill-name">HTML/CSS</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="45"></div>
-                                </div>
-                                <div class="skill-percent">45%</div>
+                            <div class="skill-percent">35%</div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                            <div class="skill-icon"><i class="ti ti-brand-html5"></i></div>
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="45"></div>
                             </div>
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="skill-icon"><i class="ti ti-database"></i></div>
-                                <div class="skill-name">Database</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="25"></div>
-                                </div>
-                                <div class="skill-percent">25%</div>
+                            <div class="skill-percent">45%</div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon"><i class="ti ti-database"></i></div>
+                            <div class="skill-name">Database</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="25"></div>
                             </div>
-                            <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
-                                <div class="skill-icon"><i class="ti ti-brain"></i></div>
-                                <div class="skill-name">AI</div>
-                                <div class="skill-track">
-                                    <div class="skill-fill" data-w="80"></div>
-                                </div>
-                                <div class="skill-percent">80%</div>
+                            <div class="skill-percent">25%</div>
+                        </div>
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                            <div class="skill-icon"><i class="ti ti-brain"></i></div>
+                            <div class="skill-name">AI</div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-w="80"></div>
                             </div>
+                            <div class="skill-percent">80%</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ─── PERSONAL INFO ─── -->
+    <section id="personal-info">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label justify-content-center">ข้อมูลทั่วไป</div>
+                <h2 class="section-title">ข้อมูลส่วนตัว</h2>
+            </div>
+
+            <div class="info-cards-grid">
+                <!-- Card 1: Student ID -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="info-card-icon"><i class="ti ti-id-badge"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">รหัสนักศึกษา</div>
+                        <div class="info-card-value">6812732120</div>
+                    </div>
+                </div>
+                <!-- Card 2: Year/Academic Year -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="info-card-icon"><i class="ti ti-timeline-event"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">ชั้นปี / ปีการศึกษา</div>
+                        <div class="info-card-value">ชั้นปีที่ 2 (ปีการศึกษา 2568)</div>
+                    </div>
+                </div>
+                <!-- Card 3: University -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-card-icon"><i class="ti ti-school"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">มหาวิทยาลัย</div>
+                        <div class="info-card-value">มหาวิทยาลัยราชภัฏศรีสะเกษ</div>
+                    </div>
+                </div>
+                <!-- Card 4: Faculty -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="info-card-icon"><i class="ti ti-books"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">คณะ</div>
+                        <div class="info-card-value">คณะศิลปศาสตร์และวิทยาศาสตร์</div>
+                    </div>
+                </div>
+                <!-- Card 5: Major -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-card-icon"><i class="ti ti-code"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">สาขา</div>
+                        <div class="info-card-value">สาขาวิทยาการคอมพิวเตอร์</div>
+                    </div>
+                </div>
+                <!-- Card 6: Address -->
+                <div class="info-card-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="info-card-icon"><i class="ti ti-map-pin"></i></div>
+                    <div class="info-card-content">
+                        <div class="info-card-label">ที่ตั้ง มหาวิทยาลัย</div>
+                        <div class="info-card-value">มรภ.ศรีสะเกษ ต.โพธิ์ อ.เมือง จ.ศรีสะเกษ 33000</div>
+                    </div>
                 </div>
             </div>
         </div>
