@@ -103,23 +103,21 @@
     <section id="about">
         <div class="container">
             <div class="about-skills-card" data-aos="fade-up" data-aos-duration="800">
-                <div class="about-content-wrapper">
-                    <!-- About text -->
-                    <div class="about-col text-center">
-                        <div class="section-label justify-content-center">เกี่ยวกับฉัน</div>
-                        <h2 class="section-title">สวัสดี ฉัน มนต์พระกาญจน์</h2>
-                        <p class="mx-auto"
-                            style="font-size:16px;color:var(--ink-light);line-height:1.9;margin-bottom:1.5rem;max-width:800px">
+                <div class="about-grid-wrapper">
+                    <!-- Left side: About -->
+                    <div class="about-left-col">
+                        <div class="section-label">เกี่ยวกับฉัน</div>
+                        <h2 class="section-title mb-4">สวัสดี ฉัน มนต์พระกาญจน์</h2>
+                        <p class="about-text">
                             นักศึกษาสาขาวิทยาการคอมพิวเตอร์
                             มุ่งมั่นในการพัฒนาทักษะด้านเทคโนโลยีและการเขียนโปรแกรมเพื่อสร้างสรรค์นวัตกรรมใหม่ๆ
                         </p>
-                        <p class="mx-auto"
-                            style="font-size:16px;color:var(--ink-light);line-height:1.9;margin-bottom:2rem;max-width:800px">
+                        <p class="about-text">
                             มีความสนใจอย่างมากในด้านการพัฒนาซอฟต์แวร์และการเขียนโปรแกรม
                             มีความพร้อมในการเรียนรู้สิ่งใหม่ๆ เสมอ
                             และมุ่งมั่นที่จะพัฒนาตนเองเพื่อก้าวสู่การเป็นนักพัฒนามืออาชีพในอนาคต
                         </p>
-                        <div class="about-tags justify-content-center">
+                        <div class="about-tags mt-3">
                             <span class="tag">Python</span>
                             <span class="tag">Java</span>
                             <span class="tag">HTML/CSS</span>
@@ -128,65 +126,64 @@
                             <span class="tag">AI</span>
                         </div>
                     </div>
-                </div>
 
-                <!-- Divider -->
-                <div class="about-divider-horizontal"></div>
+                    <!-- Vertical Divider -->
+                    <div class="about-divider-vertical"></div>
 
-                <!-- Skills Section -->
-                <div class="about-skills-section">
-                    <div class="text-center mb-5">
-                        <div class="section-label justify-content-center">ทักษะ</div>
-                        <h2 class="section-title">Expertise & Skills</h2>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
-                            <div class="skill-icon"><i class="ti ti-brush"></i></div>
-                            <div class="skill-name">UI / UX Design</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="20"></div>
+                    <!-- Right side: Skills -->
+                    <div class="about-right-col">
+                        <div class="section-label">ทักษะ</div>
+                        <h2 class="section-title mb-4">Expertise & Skills</h2>
+                        
+                        <div class="skills-grid-compact">
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                                <div class="skill-icon"><i class="ti ti-brush"></i></div>
+                                <div class="skill-name">UI / UX Design</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="20"></div>
+                                </div>
+                                <div class="skill-percent">20%</div>
                             </div>
-                            <div class="skill-percent">20%</div>
-                        </div>
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
-                            <div class="skill-icon"><i class="ti ti-brand-python"></i></div>
-                            <div class="skill-name">Python</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="30"></div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+                                <div class="skill-icon"><i class="ti ti-brand-python"></i></div>
+                                <div class="skill-name">Python</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                                <div class="skill-percent">30%</div>
                             </div>
-                            <div class="skill-percent">30%</div>
-                        </div>
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="skill-icon"><i class="ti ti-coffee"></i></div>
-                            <div class="skill-name">Java</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="35"></div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="skill-icon"><i class="ti ti-coffee"></i></div>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                                <div class="skill-percent">35%</div>
                             </div>
-                            <div class="skill-percent">35%</div>
-                        </div>
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
-                            <div class="skill-icon"><i class="ti ti-brand-html5"></i></div>
-                            <div class="skill-name">HTML/CSS</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="45"></div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                                <div class="skill-icon"><i class="ti ti-brand-html5"></i></div>
+                                <div class="skill-name">HTML/CSS</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="45"></div>
+                                </div>
+                                <div class="skill-percent">45%</div>
                             </div>
-                            <div class="skill-percent">45%</div>
-                        </div>
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="skill-icon"><i class="ti ti-database"></i></div>
-                            <div class="skill-name">Database</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="25"></div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="skill-icon"><i class="ti ti-database"></i></div>
+                                <div class="skill-name">Database</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="25"></div>
+                                </div>
+                                <div class="skill-percent">25%</div>
                             </div>
-                            <div class="skill-percent">25%</div>
-                        </div>
-                        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
-                            <div class="skill-icon"><i class="ti ti-brain"></i></div>
-                            <div class="skill-name">AI</div>
-                            <div class="skill-track">
-                                <div class="skill-fill" data-w="80"></div>
+                            <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                                <div class="skill-icon"><i class="ti ti-brain"></i></div>
+                                <div class="skill-name">AI</div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-w="80"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
                             </div>
-                            <div class="skill-percent">80%</div>
                         </div>
                     </div>
                 </div>
@@ -263,7 +260,8 @@
                 <h2 class="section-title">ผลงานที่ผ่านมา</h2>
             </div>
 
-            <div class="portfolio-single">
+            <div class="portfolio-list">
+                <!-- Project 1: ODOS Summer Camp -->
                 <div class="proj-card-featured" data-aos="fade-up" data-aos-delay="0">
                     <div class="proj-thumb-featured">
                         <img src="image/7.jpg" alt="ODOS SUMMER CAMP 2025" />
@@ -272,9 +270,104 @@
                         <div class="proj-tag">ODOS SUMMER CAMP 2025</div>
                         <div class="proj-name" style="font-size:1.5rem">ODOS SUMMER CAMP</div>
                         <p class="proj-desc" style="font-size:14px;max-width:480px">ได้ทุนรัฐบาลไทย 100%
-                            ได้ไปประเทศฟินแลนด์</p>
+                            ได้ไปประเทศฟินแลนด์ ณ Metropolia University of Applied Sciences</p>
                         <a href="https://www.facebook.com/share/p/1FgoNbQREv/" target="_blank" class="proj-link">View
                             Project <i class="ti ti-arrow-right" style="font-size:12px"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Student Union -->
+                <div class="proj-card-featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proj-thumb-featured">
+                        <div id="carouselStudentUnion" class="carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="image/64.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="สโมสรนักศึกษา ภาพที่ 1" />
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="image/66.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="สโมสรนักศึกษา ภาพที่ 2" />
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="image/68.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="สโมสรนักศึกษา ภาพที่ 3" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStudentUnion" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselStudentUnion" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="proj-body-featured">
+                        <div class="proj-tag">กิจกรรมคณะ</div>
+                        <div class="proj-name" style="font-size:1.5rem">สโมสรนักศึกษาคณะศิลปศาสตร์และวิทยาศาสตร์</div>
+                        <p class="proj-desc" style="font-size:14px;max-width:480px">
+                            ได้ร่วมทำหน้าที่ในสโมสรนักศึกษาคณะศิลปศาสตร์และวิทยาศาสตร์ มหาวิทยาลัยราชภัฏศรีสะเกษ 
+                            ร่วมจัดกิจกรรม วางแผน และดูแลการดำเนินงานต่างๆ ของทางคณะเพื่อพัฒนาศักยภาพนักศึกษา
+                        </p>
+                        <span class="proj-link-placeholder" style="font-size:12px;color:var(--ink-muted);letter-spacing:0.08em;text-transform:uppercase;">
+                            Student Association Activity
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 3: School Volunteering -->
+                <div class="proj-card-featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proj-thumb-featured">
+                        <div id="carouselSchoolCamp" class="carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="image/65.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="ค่ายอาสา ภาพที่ 1" />
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="image/69.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="ค่ายอาสา ภาพที่ 2" />
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="image/70.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="ค่ายอาสา ภาพที่ 3" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSchoolCamp" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselSchoolCamp" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="proj-body-featured">
+                        <div class="proj-tag">ค่ายอาสาพัฒนา</div>
+                        <div class="proj-name" style="font-size:1.5rem">โรงเรียนบ้านหัวช้าง (ราษฎร์บำรุง)</div>
+                        <p class="proj-desc" style="font-size:14px;max-width:480px;line-height:1.6;">
+                            ณ โรงเรียนบ้านหัวช้าง(ราษฎร์บำรุง) อำเภออุทุมพรพิสัย จังหวัดศรีสะเกษ <br />
+                            วันที่ 27 กุมภาพันธ์ - 1 มีนาคม 2569 (3 วัน 2 คืน) <br />
+                            ร่วมพัฒนาอาคารสถานที่ ทาสีปรับปรุงโรงเรียน และจัดกิจกรรมนันทนาการมอบสิ่งดีๆ ให้กับเด็กนักเรียน
+                        </p>
+                        <span class="proj-link-placeholder" style="font-size:12px;color:var(--ink-muted);letter-spacing:0.08em;text-transform:uppercase;">
+                            Volunteer Development Camp
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Sisaket Games -->
+                <div class="proj-card-featured" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proj-thumb-featured">
+                        <img src="image/67.jpg" alt="ศูนย์ประสานงานประมวลผล ศรีสะเกษเกมส์" />
+                    </div>
+                    <div class="proj-body-featured">
+                        <div class="proj-tag">งานจิตอาสาและบริการวิชาการ</div>
+                        <div class="proj-name" style="font-size:1.5rem">ศูนย์ประสานงานประมวลผล ศรีสะเกษเกมส์</div>
+                        <p class="proj-desc" style="font-size:14px;max-width:480px">
+                            ได้เข้าร่วมปฏิบัติหน้าที่ ณ ศูนย์ประสานงานประมวลผลข้อมูลการแข่งขันกีฬาแห่งชาติ 
+                            "ศรีสะเกษเกมส์" ทำหน้าที่ประสานงาน บันทึกข้อมูลคะแนน และประมวลผลการแข่งขันกีฬาประเภทต่างๆ
+                        </p>
+                        <span class="proj-link-placeholder" style="font-size:12px;color:var(--ink-muted);letter-spacing:0.08em;text-transform:uppercase;">
+                            Information Coordination Service
+                        </span>
                     </div>
                 </div>
             </div>
@@ -334,6 +427,10 @@
             <div class="contact-links" data-aos="fade-up" data-aos-delay="150">
                 <a href="mailto:mpoontv1234@gmail.com" class="contact-btn contact-btn-solid">
                     <i class="ti ti-mail"></i> Gmail
+                </a>
+                <a href="https://github.com/lnapoon" target="_blank"
+                    class="contact-btn contact-btn-ghost">
+                    <i class="ti ti-brand-github"></i> GitHub
                 </a>
                 <a href="https://www.instagram.com/lnwpoon_2007?igsh=MWQ0b2dkeTg5aTlvYQ%3D%3D" target="_blank"
                     class="contact-btn contact-btn-ghost">
